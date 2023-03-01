@@ -22,8 +22,8 @@ public class TestDbServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//setup connection variables
-		String user = "springstudents"; 
-		String pass = "springstudents"; 
+		String user = "springstudent"; 
+		String pass = "springstudent"; 
 		
 		String jdbcUrl = "jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false"; 
 		String driver = "com.mysql.jdbc.Driver"; 
@@ -34,6 +34,7 @@ public class TestDbServlet extends HttpServlet {
 			Class.forName(driver); 
 			Connection myCon = DriverManager.getConnection(jdbcUrl, user,pass); 
 			out.println("Connection SuccessFull!!!"); 
+			myCon.close(); 
 		}
 		catch(Exception e) {
 			e.printStackTrace(); 
