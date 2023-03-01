@@ -22,13 +22,10 @@ public class TestDbServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//setup connection variables
-<<<<<<< HEAD
-		String user = "springstudent"; 
-		String pass = "springstudent"; 
-=======
 		String user = ""; 
 		String pass = ""; 
->>>>>>> 1aaee6ef321fb446f2946c2a7a0923c12a17a32c
+		String user = ""; 
+		String pass = ""; 
 		
 		String jdbcUrl = "jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false"; 
 		String driver = "com.mysql.jdbc.Driver"; 
